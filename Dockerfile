@@ -19,4 +19,4 @@ RUN apk update && \
 
 EXPOSE 3000
 
-ENTRYPOINT ["/usr/src/app/bin/pm2", "start","/usr/src/app/app.js"]
+ENTRYPOINT ["node","/usr/src/app/app.js"]
