@@ -5,7 +5,7 @@ var http     = require('http')
 var ascoltatore = {
   //using ascoltatore
   type: 'mongo',
-  url: 'mongodb://60.205.1.68:27017/mqtt',
+  url: 'mongodb://10.25.143.50:27017/mqtt',
   pubsubCollection: 'ascoltatori',
   mongo: {}
 };
