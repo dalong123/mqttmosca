@@ -11,6 +11,9 @@ WORKDIR /usr/src/app/
 COPY ./ /usr/src/app/
 
 RUN apk update && \
+    apk add make gcc g++ python git && \
+    npm install --unsafe-perm --production && \
+    apk del make gcc g++ python git && \
     npm install -g  pm2  && \
     cd /usr/src/app && npm install
 
