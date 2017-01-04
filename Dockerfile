@@ -8,7 +8,7 @@ MAINTAINER dalongrong
 COPY . /app  
 WORKDIR /app
 
-RUN npm install --registry=https://registry.npm.taobao.org
+RUN npm install  --registry=https://registry.npm.taobao.org -g cnpm && cnpm install  
  
 
 EXPOSE 3000
